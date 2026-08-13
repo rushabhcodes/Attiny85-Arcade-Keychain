@@ -112,6 +112,8 @@ export default () => (
     layers={2}
     thickness="1.6mm"
     title="ATtiny85 Arcade Keychain"
+    minViaHoleDiameter="0.3mm"
+    minViaPadDiameter="0.45mm"
   >
     <schematicsection name="Power" displayName="Power" />
     <schematicsection name="MCU" displayName="ATtiny85" />
@@ -128,6 +130,7 @@ export default () => (
       layer="bottom"
       pcbX={0.0122}
       pcbY={-1.2397}
+      doNotPlace
     />
     <EG1213
       name="S1"
@@ -277,15 +280,15 @@ export default () => (
     <silkscreentext text="OFF" fontSize={2.4} pcbX={8.9} pcbY={18.7} />
     <silkscreengraphic
       imageUrl={tscircuitLogoSvg}
-      width="5.5mm"
-      height="5.5mm"
-      pcbX={-20}
+      width="10mm"
+      height="10mm"
+      pcbX={-19}
       pcbY={15}
     />
     <silkscreentext
       text="made by rushabhcodes"
       layer={"bottom"}
-      fontSize={1.2}
+      fontSize={1.4}
       pcbX={0}
       pcbY={-15}
     />
