@@ -1,6 +1,6 @@
 {
   "name": "Attiny85-Arcade-Keychain",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A tscircuit component package",
   "main": "index.tsx",
   "keywords": [

@@ -160,10 +160,9 @@ export default () => (
       schX={-20}
       schY={-1}
       schOrientation="vertical"
-      layer="bottom"
-      pcbX={25.971}
-      pcbY={16.7435}
-    />
+      pcbX={-4.508}
+      pcbY={-11.3235}
+      />
 
     {/* ---------------- MCU ---------------- */}
     <Attiny85
