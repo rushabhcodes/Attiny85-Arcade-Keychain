@@ -26,7 +26,7 @@ import { ATTINY85_20PU } from "./imports/ATTINY85_20PU";
 import { PKLCS1212E2000_R1 } from "./imports/PKLCS1212E2000_R1";
 import { SN74LVC2G04DBVR } from "./imports/SN74LVC2G04DBVR";
 import { EG1213 } from "./imports/EG1213";
-import { CPG135001D01 } from "./imports/CPG135001D01";
+import { CPG135001D03 } from "./imports/CPG135001D03";
 import { CoinCellHolder3003 } from "./imports/CoinCellHolder3003";
 import { OledDisplay } from "./imports/OledDisplay";
 
@@ -208,7 +208,7 @@ export default () => (
       pcbX={14.922}
       pcbY={-7.6405}
     />
-    <CPG135001D01
+    <CPG135001D03
       name="SW1"
       schSectionName="Buttons"
       schX={10}
@@ -227,7 +227,7 @@ export default () => (
       pcbX={-14.2}
       pcbY={-7.5135}
     />
-    <CPG135001D01
+    <CPG135001D03
       name="SW2"
       schSectionName="Buttons"
       schX={10}
