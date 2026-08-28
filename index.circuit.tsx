@@ -5,7 +5,7 @@
  * (Attiny_Arcader_game_rev_1.1 schematic + Attiny-Arcade_Keychain_2.0 Gerbers).
  *
  * How it works
- *   A CR2032 on the underside feeds the board through the EG1213 slide switch.
+ *   A CR2032 on the underside feeds the board through the SK-12D02VG3 slide switch.
  *   The ATtiny85 talks software-I2C to a 4-pin 0.96" OLED module on PB3/PB4,
  *   reads two Kailh Choc keyswitches on PB0/PB2 (10k pull-downs), and drives a
  *   Murata piezo from PB1 through an SN74LVC2G04 dual inverter wired as a
@@ -25,7 +25,7 @@ import {
 import { ATTINY85_20PU } from "./imports/ATTINY85_20PU";
 import { PKLCS1212E2000_R1 } from "./imports/PKLCS1212E2000_R1";
 import { SN74LVC2G04DBVR } from "./imports/SN74LVC2G04DBVR";
-import { EG1213 } from "./imports/EG1213";
+import { SK_12D02VG3 } from "./imports/SK_12D02VG3";
 import { CPG135001D03 } from "./imports/CPG135001D03";
 import { CoinCellHolder3003 } from "./imports/CoinCellHolder3003";
 import { OledDisplay } from "./imports/OledDisplay";
@@ -132,13 +132,13 @@ export default () => (
       pcbY={-1.2397}
       doNotPlace
     />
-    <EG1213
+    <SK_12D02VG3
       name="S1"
       schSectionName="Power"
       schX={-24}
       schY={5}
       pcbX={-0.064}
-      pcbY={15.4735}
+      pcbY={16.4735}
       pcbRotation={180}
     />
     <capacitor
