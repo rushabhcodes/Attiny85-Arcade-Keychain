@@ -265,6 +265,14 @@ export default () => (
     {/* Mounting holes are already treated as autorouter obstacles. */}
     <hole name="MH1" diameter="2.9mm" pcbX={-11.5} pcbY={11.5} />
     <hole name="MH2" diameter="2.9mm" pcbX={11.5} pcbY={11.5} />
+    {/* Reserve 0.30 mm beyond MH2's drill edge for the OLED clock route. */}
+    <keepout
+      shape="circle"
+      radius="1.75mm"
+      pcbX={11.5}
+      pcbY={11.5}
+      layers={["top", "bottom"]}
+    />
     <hole name="MH3" diameter="2.9mm" pcbX={-11.7} pcbY={-12.3} />
     <hole name="MH4" diameter="2.9mm" pcbX={11.7} pcbY={-12.3} />
     <cutout
