@@ -330,7 +330,7 @@ export default () => (
     <trace from=".IC2 > .2Y" to=".LS1 > .pin1" />
 
     {/* Ground pour on both layers, matching the reference artwork. */}
-    <copperpour connectsTo="net.GND" layer="top" />
-    <copperpour connectsTo="net.GND" layer="bottom" />
+    <copperpour connectsTo="net.GND" layer="top" boardEdgeMargin="0.25mm" />
+    <copperpour connectsTo="net.GND" layer="bottom" boardEdgeMargin="0.25mm" />
   </board>
 );
