@@ -22,6 +22,10 @@ export const CPG135001D03 = (props: PushButtonProps<typeof pinLabels>) => {
         <hole pcbX="-0.000127mm" pcbY="-2.5249505mm" diameter="3.5000184mm" />
 <hole pcbX="-5.499989mm" pcbY="-2.5249505mm" diameter="1.999996mm" />
 <hole pcbX="5.499989mm" pcbY="-2.5249505mm" diameter="1.999996mm" />
+{/* Reserve a nominal 0.35 mm beyond each mounting-hole edge on both layers. */}
+<keepout shape="circle" radius="2.10001mm" pcbX="-0.000127mm" pcbY="-2.5249505mm" layers={["top", "bottom"]} />
+<keepout shape="circle" radius="1.35mm" pcbX="-5.499989mm" pcbY="-2.5249505mm" layers={["top", "bottom"]} />
+<keepout shape="circle" radius="1.35mm" pcbX="5.499989mm" pcbY="-2.5249505mm" layers={["top", "bottom"]} />
 <platedhole  portHints={["pin1"]} pcbX="-0.000127mm" pcbY="3.3749615mm" outerDiameter="1.7999964mm" holeDiameter="1.1999976mm" shape="circle" />
 <platedhole  portHints={["pin2"]} pcbX="4.999863mm" pcbY="1.2751435mm" outerDiameter="1.7999964mm" holeDiameter="1.1999976mm" shape="circle" />
 <silkscreenpath route={[{"x":-7.500137400000085,"y":-10.024960899999769},{"x":7.499883399999931,"y":-10.024960899999769}]} />

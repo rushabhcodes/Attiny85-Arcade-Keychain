@@ -275,6 +275,10 @@ export default () => (
     />
     <hole name="MH3" diameter="2.9mm" pcbX={-11.7} pcbY={-12.3} />
     <hole name="MH4" diameter="2.9mm" pcbX={11.7} pcbY={-12.3} />
+    {/* Reserve a nominal 0.35 mm beyond the other mounting-hole edges. */}
+    <keepout shape="circle" radius="1.8mm" pcbX={-11.5} pcbY={11.5} layers={["top", "bottom"]} />
+    <keepout shape="circle" radius="1.8mm" pcbX={-11.7} pcbY={-12.3} layers={["top", "bottom"]} />
+    <keepout shape="circle" radius="1.8mm" pcbX={11.7} pcbY={-12.3} layers={["top", "bottom"]} />
     <cutout
       shape="polygon"
       points={KEYCHAIN_CUTOUT}

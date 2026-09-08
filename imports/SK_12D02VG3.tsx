@@ -19,14 +19,15 @@ export const SK_12D02VG3 = (props: SwitchProps) => {
       manufacturerPartNumber="SK-12D02VG3"
       footprint={
         <footprint>
+          {/* Keep 0.25 mm of copper around each plated slot. */}
           <platedhole
             portHints={["pin1"]}
             pcbX="-1.998599mm"
             pcbY="0mm"
             holeWidth="0.700024mm"
             holeHeight="0.899922mm"
-            outerWidth="0.999998mm"
-            outerHeight="1.199896mm"
+            outerWidth="1.200024mm"
+            outerHeight="1.399922mm"
             pcbRotation="90deg"
             shape="pill"
           />
@@ -36,8 +37,8 @@ export const SK_12D02VG3 = (props: SwitchProps) => {
             pcbY="0mm"
             holeWidth="0.700024mm"
             holeHeight="0.899922mm"
-            outerWidth="0.999998mm"
-            outerHeight="1.199896mm"
+            outerWidth="1.200024mm"
+            outerHeight="1.399922mm"
             pcbRotation="90deg"
             shape="pill"
           />
@@ -47,8 +48,8 @@ export const SK_12D02VG3 = (props: SwitchProps) => {
             pcbY="0mm"
             holeWidth="0.700024mm"
             holeHeight="0.899922mm"
-            outerWidth="0.999998mm"
-            outerHeight="1.199896mm"
+            outerWidth="1.200024mm"
+            outerHeight="1.399922mm"
             pcbRotation="90deg"
             shape="pill"
           />
@@ -58,8 +59,8 @@ export const SK_12D02VG3 = (props: SwitchProps) => {
             pcbY="0mm"
             holeWidth="0.700024mm"
             holeHeight="1.5000224mm"
-            outerWidth="0.999998mm"
-            outerHeight="1.7999964mm"
+            outerWidth="1.200024mm"
+            outerHeight="2.0000224mm"
             shape="pill"
           />
           <platedhole
@@ -68,8 +69,8 @@ export const SK_12D02VG3 = (props: SwitchProps) => {
             pcbY="0mm"
             holeWidth="0.700024mm"
             holeHeight="1.5000224mm"
-            outerWidth="0.999998mm"
-            outerHeight="1.7999964mm"
+            outerWidth="1.200024mm"
+            outerHeight="2.0000224mm"
             shape="pill"
           />
           <silkscreenpath
